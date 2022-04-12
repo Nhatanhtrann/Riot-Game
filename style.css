@@ -2,32 +2,23 @@
     padding: 0;
     margin: 0;
 }
+.total-margin{
+    margin: 0 40px 0 40px !important;
+    background-color: rgb(43, 42, 41, 0.2) !important;
+    position:absolute;
+}
 /* Phần Nav Header */
 .header__nav{
     background-color: #111;
     border-bottom: 2px solid rgba(51,51,51,.25);
     font-weight: bold;
-    height: 60px;
-    position: relative;
+    height: 80px;
+    position:fixed;
+    top: 0;
     display: flex;
-    max-width: 100%;
+    width: 100%;
     padding: 10px 30px 10px 30px;
-}
-.header__nav-1{
-    background-color: #111;
-    height:60px;
-    position: relative;
-    display: flex;
-    width: 60%;
-}
-.header__nav-2{
-    background-color: #111;
-    height:60px;
-    position: absolute;
-    display:flex;
-    right: 30px;
-    top: 10px;
-    width: 30%;
+    z-index: 1;
 }
 .nav__logo{
     width: 100px;
@@ -46,7 +37,10 @@
     justify-content: center;
     align-items: center;
     font-size: 10px;
-
+}
+.nav__sub-logo span{
+    display:block;
+    margin:auto;
 }
 .nav__the-first-menu{
     display:flex;
@@ -56,8 +50,6 @@
     margin: 5px;
     z-index: 1;
     color:#fff;
-
-
 }
 .nav__the-first-menu span{
     text-transform: uppercase;
@@ -65,6 +57,8 @@
     width: 130px;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    font-weight: 200;
 }
 .nav__the-first-menu:hover{
     background-color: rgba(51,51,51,1);
@@ -124,8 +118,9 @@
     width: 130px;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    font-weight: 200;
 }
-.nav__the-f
 .nav__the-seconds-menu a{
     display:block;
     text-decoration: none;
@@ -184,17 +179,83 @@
     width: 120px;
     justify-content: center;
     align-items: center;
-    margin: 5px;
     text-transform: uppercase;
     z-index: 1;
     color:#fff;
 }
+.nav__the-third-menu span{
+    text-transform: uppercase;
+    display:flex;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 200;
+}
 .header__nav-2-language{
     color:#fff;
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+}
+.header__input{
+    color:#fff;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0;
+    border-radius: 30px;
+    width: 190px;
+    height: 40px;
+    background-color:#2b2a29;
+    margin: 10px;
+    
+}
+.header__input input{
+    outline: none;
+    width: 100px;
+    left: 10px;
+    background-color:#2b2a29;
+    border: none;
+    color:#fff;
+}
+.ti-search{
+    margin-left: 15px ;
     font-size: 20px;
+}
+.ti-search:hover{
+    cursor: pointer;
+}
+.header__sign-in-button{
+    color:#fff;
+    text-transform: uppercase;
+    display:block;
+    right: 0;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    background: #cf3639;
+    width: 130px;
+    border-radius: 30px;
+    height: 40px;
+    color:#111;
+    margin: 15px;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+}
+.header__sign-in-button:hover{
+    cursor: pointer;
+    background-color: #2b2a29;
+    color:#fff;
+
+}
+.header__sign-in-button span{
+    font-weight: 900;
+    font-size: 13px;
 }
 
 
@@ -207,7 +268,7 @@
 }
 .main-content__video{
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 .main-content__text{
     display: flex;
@@ -241,20 +302,10 @@
     transition-timing-function: ease-out;
 
 }
-.main-content__button span{
-    color:#fff;
-    font-weight: 100;
-    font-size: 15px;
-}
 .main-content__button:hover{
-    background-color: #646462;
     cursor: pointer;
     background-color: #2b2a29;
-    background-position: 0 100%;
-}
-.main-content__button span:hover{
-    color: #cf3639;
-    cursor: pointer;
+    color:#cf3639;
 }
 @keyframes initial-moving{
     from{
@@ -272,4 +323,16 @@
         color: #cf3639;
 
     }
+}
+.content__introduce{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+}
+.content__introduce h2{
+    text-align: center;
+
 }
